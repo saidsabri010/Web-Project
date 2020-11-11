@@ -75,7 +75,7 @@ color:white;
     color: red;
 }
 /* about us section */
-.about,.servecies,.contact{
+.about,.servecies,.contact,.ourteam{
     padding: 5% 10%;
     text-align: center;
 
@@ -136,4 +136,32 @@ color:white;
     height: 80px;
     resize: none;
     border: 1px solid #ccc;
+}
+/* our team */
+.ourteam{
+    background: #f5f5f5;
+
+}
+.wrapper_ourteam .team{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper_ourteam .team1.team{
+    margin-bottom: 20px;
+}
+.wrapper_ourteam .team_member{
+    width: 600px;
+    height: auto;
+    cursor: pointer;
+
+}
+.wrapper_ourteam .team_member img{
+    width: 400px;
+    display: block;
+    height: auto;
+    transition: all 0.5s ease;
+
+}
+.wrapper_ourteam .team_member:hover img{
+    transform: scale(1.2,1.2)
 }
