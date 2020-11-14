@@ -1,3 +1,5 @@
+<?php include('server.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -8,6 +10,22 @@
     <link rel="icon" href="images/icon.png">
   </head>
   <body>
+    <div class="content">
+      <?php if(isset($_SESSION['Success'])): ?>
+      <div class="error Success">
+        <h3>
+          <?php 
+          echo $_SESSION['Success'];
+          unset($_SESSION['Success']);
+          ?>
+        </h3>
+      </div>
+      <?php endif ?>
+         <?php if(isset($_SESSION['username'])): ?>
+       <p>Welcome <strong><?php echo $_SESSION['Success']; ?></strong></p>
+       <p><a href="index.php?logout='1'"></a>LogOut</p>
+         <?php endif ?>
+    </div>
   <div class="main_container" id="home">
 <div class="navbar">
 <div class="logo">
