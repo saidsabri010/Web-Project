@@ -13,11 +13,10 @@
 </div>
 <br>
 <form action="register.php" method="post">
-  <!--display validation errors here-->
-  <?php include('errors.php'); ?>
+<?php include('errors.php') ?>
   <div class="input">
   <label for="name" >User name:</label>
-<input type="text"  name="username" value="<?php echo $username ?>" placeholder="username" required ><br>
+<input type="text"  name="username" placeholder="username" required ><br>
 <label for="Email" >Email:</label>
 <input type="text" name="email" placeholder="Email" required><br>
 <label for="password" >Password:</label>

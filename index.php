@@ -1,5 +1,16 @@
-<?php include('server.php'); ?>
+<?php 
+session_start();
+if(isset($_SESSION['username'])){
+  $_SESSION['msg'] ="You must log in first to view this page";
+  header("location:login.php");
+}
+if(isset($_GET['logout'])){
+  session_destroy();
+  unset($_SESSION['username']);
+  header("location:login.php");
+}
 
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -10,22 +21,9 @@
     <link rel="icon" href="images/icon.png">
   </head>
   <body>
-    <div class="content">
-      <?php if(isset($_SESSION['Success'])): ?>
-      <div class="error Success">
-        <h3>
-          <?php 
-          echo $_SESSION['Success'];
-          unset($_SESSION['Success']);
-          ?>
-        </h3>
-      </div>
-      <?php endif ?>
-         <?php if(isset($_SESSION['username'])): ?>
-       <p>Welcome <strong><?php echo $_SESSION['Success']; ?></strong></p>
-       <p><a href="index.php?logout='1'"></a>LogOut</p>
-         <?php endif ?>
-    </div>
+<?php if(isset($_SESSION['username'])) : ?>
+<h3>Your welcome <strong><?php echo $_SESSION['username']; ?></strong></h3>
+<?php endif ?>
   <div class="main_container" id="home">
 <div class="navbar">
 <div class="logo">
@@ -38,6 +36,8 @@
   <li> <a href="#servecies">Our Service</a> </li>
   <li> <a href="#ourteam">Our Team</a> </li>
   <li> <a href="#about">About</a> </li>
+  <li><a href="index.php?logout='1'">Logout</a></li>
+ 
 </ul>
 </div>
 </div>
