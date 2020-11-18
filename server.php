@@ -6,7 +6,7 @@ $username ="";
 $email = "";
 $errors = array();
 //connect to db
-$db =  mysqli_connect('localhost', 'root', '', 'user') ;
+$db =  new mysqli("localhost", "root", '', "user");
 if($db) 
 {
     echo "its connected";
