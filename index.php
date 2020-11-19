@@ -1,6 +1,7 @@
+
 <?php 
 session_start();
-if(isset($_SESSION['username'])){
+if(!isset($_SESSION['username'])){
   $_SESSION['msg'] ="You must log in first to view this page";
   header("location:login.php");
 }
@@ -21,9 +22,7 @@ if(isset($_GET['logout'])){
     <link rel="icon" href="images/icon.png">
   </head>
   <body>
-<?php if(isset($_SESSION['username'])) : ?>
-<h3>Your welcome <strong><?php echo $_SESSION['username']; ?></strong></h3>
-<?php endif ?>
+
   <div class="main_container" id="home">
 <div class="navbar">
 <div class="logo">
@@ -43,6 +42,9 @@ if(isset($_GET['logout'])){
 </div>
 <div class="banner_image">
 <div class="banner_content">
+<?php if(isset($_SESSION['username'])) : ?>
+<h1 style="color:red">You are welcome <strong><?php echo $_SESSION['username']; ?></strong></h1>
+<?php endif ?>
   <h1>Computer science is amazing <br>
 <span>only amazing people fall in love with it</span>
   </h1>

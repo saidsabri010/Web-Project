@@ -1,4 +1,4 @@
-
+<?php include('server.php') ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -15,12 +15,12 @@
 <form action="login.php" method="post">
   <div class="input">
   <label for="name" >User name:</label>
-<input type="text" placeholder="user name" required><br>
+<input type="text" name="username" placeholder="user name" required><br>
 <label for="password" >Password:</label>
-<input type="password" name="" id="" placeholder ="Password" required>
+<input type="password" name="password1" id="" placeholder ="Password" required>
   </div>
 
-  <button class="btn" type="submit" name="login">Login</button>
+  <button class="btn" type="submit" name="login_user">Login</button>
 </form>
 <br>
 <p>Already a user ! <a href="register.php"><b> Register Here</b> </a> </p>
