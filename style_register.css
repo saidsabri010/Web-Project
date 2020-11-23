@@ -9,6 +9,7 @@ body{
     font-size: 120%;
     font-family: 'Castoro', serif;
     background-image : url('images/login.jpeg');
+    background-repeat: no-repeat;
 
 }
 .header{
