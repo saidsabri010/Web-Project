@@ -16,8 +16,8 @@ p{
     line-height: 20px;
     color: #a9a9a9;
 }
-h3.title{
-    margin-bottom: 20px;
+h1.title{
+    margin-bottom: 20px; 
     color :black;
     font-family: 'Allura', cursive;
     text-transform: uppercase;

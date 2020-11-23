@@ -41,6 +41,7 @@ if(isset($_GET['logout'])){
 </div>
 </div>
 <div class="banner_image">
+
 <div class="banner_content">
 <?php if(isset($_SESSION['username'])) : ?>
 <h1 style="color:red">You are welcome <strong><?php echo $_SESSION['username']; ?></strong></h1>

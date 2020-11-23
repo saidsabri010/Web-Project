@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>User Registration</title>
     <link rel="stylesheet" href="style_register.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
 <div class="container">

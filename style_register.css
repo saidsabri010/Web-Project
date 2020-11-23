@@ -1,10 +1,13 @@
 *{
     margin: 0px;
     padding:0px;
+
+    
 }
 body{
     font-size: 120%;
-    background-color: lightblue;
+    background-color:rgb(12, 191, 223);
+    background-image : url('images/login.jpeg');
 }
 .header{
     width: 20%;
@@ -33,6 +36,7 @@ p{
 }
 .input{
     margin: 10px 0px 10px 0px;
+   
 }
 .input label{
     margin:4px;
