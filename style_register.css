@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@1&display=swap');
 *{
     margin: 0px;
     padding:0px;
-
+   
     
 }
 body{
     font-size: 120%;
-    background-color:rgb(12, 191, 223);
+    font-family: 'Castoro', serif;
     background-image : url('images/login.jpeg');
+
 }
 .header{
     width: 20%;
@@ -20,6 +22,7 @@ body{
     padding: 5px;
     display: flex;
     justify-content: center;
+    
 
 }
 form{

@@ -65,7 +65,7 @@ if($user['username']=== $username)
     
       $_SESSION['username'] = $username;
       $_SESSION['Success'] = 'You are logged in';
-      header('location:index.php');
+      header('location:login.php');
     
     }
 }
