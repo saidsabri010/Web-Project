@@ -105,16 +105,16 @@ if(isset($_GET['logout'])){
   <h1 class="title"> Contact Us</h1>
   <div class="from_wrapper">
     <div class="from_input">
-      <input type="text" placeholder="Email" name="email" id="" require>
+      <input type="text" placeholder="Email" name="email" id="" required>
     </div>
     <div class="from_input">
       <input type="text" placeholder="Subject" name="subject">
     </div>
     <div class="from_input">
-      <textarea name="message" placeholder="Message"></textarea>
+      <textarea name="message" placeholder="Message" required></textarea>
     </div>
     <div class="btn">
-    <input style="    display: block;
+    <input id="sometext" style="  display: block;
     width: 180px;
     height: 35px;
     border: 2px solid #fb2274;
@@ -123,7 +123,6 @@ if(isset($_GET['logout'])){
     margin: 25px auto 0;
     color: #fb2274;
     text-align: center;" type="submit" name="submit" value="submit">
-
     </div>
   </div>
 </div>
