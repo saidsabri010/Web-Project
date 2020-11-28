@@ -38,6 +38,10 @@ $password2 =mysqli_real_escape_string($db,$_POST['password2']);
     {
       array_push($errors,"the two passwords do not match");
     }
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) 
+    {
+      array_push($errors, "invalid email");
+    }
 
 //lest's make the username unique
 $user_check_query = "SELECT * FROM user Where username='$username' or email = '$email' LIMIT 1";
@@ -109,5 +113,7 @@ if(isset($_GET['logout']))
     unset($_SESSION['username']);
     header('location:login.html');
 }
+
+
 
 ?>

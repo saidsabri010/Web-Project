@@ -6,9 +6,6 @@
     <link rel="stylesheet" href="style_register.css">
     <title>Login Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-    background-image : url('images/team.jpg');
-    </style>
   </head>
   <body>
   <div class="container">
@@ -31,5 +28,7 @@
 </form>
 <br>
 <p>Already a user ! <a href="register.php"><b> Register Here</b> </a> </p>
+
+</div>
   </body>
 </html>

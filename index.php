@@ -12,6 +12,7 @@ if(isset($_GET['logout'])){
 }
 
 ?>
+<?php include('contactus.php') ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -99,24 +100,34 @@ if(isset($_GET['logout'])){
          </div>
      </div>
 </div>
-
+<form action="index.php" method= "post">
 <div class="contact" id="contact">
   <h1 class="title"> Contact Us</h1>
   <div class="from_wrapper">
     <div class="from_input">
-      <input type="text" placeholder="Email" name="" id="">
+      <input type="text" placeholder="Email" name="email" id="" require>
     </div>
     <div class="from_input">
-      <input type="text" placeholder="Subject">
+      <input type="text" placeholder="Subject" name="subject">
     </div>
     <div class="from_input">
-      <textarea placeholder="Message"></textarea>
+      <textarea name="message" placeholder="Message"></textarea>
     </div>
     <div class="btn">
-      <a href="#">Submit</a>
+    <input style="    display: block;
+    width: 180px;
+    height: 35px;
+    border: 2px solid #fb2274;
+    line-height: 35px;
+    /* to center it */
+    margin: 25px auto 0;
+    color: #fb2274;
+    text-align: center;" type="submit" name="submit" value="submit">
+
     </div>
   </div>
 </div>
+</form>
 <div class="ourteam" id="ourteam">
 <h1 class="title">Our Team</h1>
 <div class="wrapper_ourteam">

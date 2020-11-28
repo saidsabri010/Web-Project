@@ -32,6 +32,7 @@
 </form>
 <br>
 <p>Already a user ! <a href="login.php"><b> Login</b> </a> </p>
+
 </div>
 
   </body>
