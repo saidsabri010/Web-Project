@@ -1,5 +1,7 @@
 
 <?php 
+
+
 session_start();
 // initializing variables
 
@@ -14,10 +16,13 @@ $db =  mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
  {
 //if the button register gets clicked
 //register users
-$username =mysqli_real_escape_string($db,$_POST['username']);
-$email =mysqli_real_escape_string($db,$_POST['email']);
-$password1 =mysqli_real_escape_string($db,$_POST['password1']);
-$password2 =mysqli_real_escape_string($db,$_POST['password2']);
+
+  $username =mysqli_real_escape_string($db,$_POST['username']);
+  $email =mysqli_real_escape_string($db,$_POST['email']);
+  $password1 =mysqli_real_escape_string($db,$_POST['password1']);
+  $password2 =mysqli_real_escape_string($db,$_POST['password2']);
+
+
 
 
 //make sure inputs are filled properly
@@ -113,7 +118,6 @@ if(isset($_GET['logout']))
     unset($_SESSION['username']);
     header('location:login.html');
 }
-
 
 
 ?>
